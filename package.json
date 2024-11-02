@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx playwright test --headed --workers=2"
+    "start": "xvfb-run npx playwright test --headed --workers=2"
   },
   "keywords": [],
   "author": "",

@@ -31,10 +31,6 @@ test('post 1', async ({ page }) => {
 
 });
 test('post 2', async ({ page }) => {
-  page.on('request', request => {
-    console.log(`Request: ${request.method()} ${request.url()}`);
-  });
-
   const url = process.env.URL2 || "";
   await page.goto(url);
   const MIN_TIME = 5000;

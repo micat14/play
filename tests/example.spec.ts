@@ -1,10 +1,6 @@
 import { test } from '@playwright/test';
 
 test('post 1', async ({ page }) => {
-  page.on('request', request => {
-    console.log(`Request: ${request.method()} ${request.url()}`);
-  });
-
   const url = process.env.URL1 || "";
   await page.goto(url);
   const MIN_TIME = 5000;
@@ -20,7 +16,7 @@ test('post 1', async ({ page }) => {
   for (let index = 0; index < 50; index++) {
     const randomTime = Math.floor(Math.random() * (MAX_TIME - MIN_TIME + 1)) + MIN_TIME;
     const scrollPosition = await page.evaluate(() => window.scrollY);
-    console.log(`La posición actual del desplazamiento vertical es: ${scrollPosition}px`);
+    //  console.log(`La posición actual del desplazamiento vertical es: ${scrollPosition}px`);
 
     await page.waitForTimeout(randomTime);
     await page.mouse.wheel(100, eachScroll);
@@ -46,7 +42,7 @@ test('post 2', async ({ page }) => {
   for (let index = 0; index < 50; index++) {
     const randomTime = Math.floor(Math.random() * (MAX_TIME - MIN_TIME + 1)) + MIN_TIME;
     const scrollPosition = await page.evaluate(() => window.scrollY);
-    console.log(`La posición actual del desplazamiento vertical es: ${scrollPosition}px`);
+    // console.log(`La posición actual del desplazamiento vertical es: ${scrollPosition}px`);
 
     await page.waitForTimeout(randomTime);
     await page.mouse.wheel(100, eachScroll);

@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright Win 
 on:
   workflow_dispatch:
   #schedule:
@@ -21,7 +21,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-2:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -39,7 +38,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-3:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -57,7 +55,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-4:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -75,7 +72,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-5:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -93,7 +89,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-6:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -111,7 +106,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-7:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -129,7 +123,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-8:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -147,7 +140,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-9:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -165,7 +157,6 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
   test-10:
     timeout-minutes: 60
     runs-on: windows-latest
@@ -183,4 +174,3 @@ jobs:
         env:
           CI: true
           URL1: ${{ secrets.URL1 }}
-          URL2: ${{ secrets.URL2 }}
